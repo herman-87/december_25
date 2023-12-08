@@ -47,7 +47,10 @@ main{
     align-items: center;
     background-color: rgb(242, 255, 58);
     width: 500px;
-    padding: 10px;
+}
+#slider{
+    width: 500px;
+    overflow: hidden;
 }
 #right p{
     text-align: center;
@@ -57,14 +60,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: cal(500px * 25);
+    width: cal(500px * 3);
     height: 60vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-image: url("images/image25.jpg") cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     /* animation: 9s linear 0s infinite alternate animating-multiple-properties; */
-    background-color: black;
 }
 img{
     position: relative;
@@ -72,10 +74,8 @@ img{
     width: 500px;
     height: 500px;
 }
-#slides{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#slide{
+    float: left;
 }
 /* @keyframes animating-multiple-properties {
     0% {
@@ -124,9 +124,6 @@ footer{
     #right p{
         font-size: 15px;
         margin: 20px;
-        color: white;
-        text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(255, 255, 255);
-        z-index: 1000;
     }
     #left{
         margin-bottom: 20px;
