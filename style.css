@@ -31,7 +31,7 @@ h2{
 main{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 80vh;
 }
 #left{
     display: flex;
@@ -43,7 +43,7 @@ main{
 #right{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: rgb(242, 255, 58);
     width: 500px;
@@ -55,18 +55,16 @@ main{
 #right p{
     text-align: center;
     font-size: 20px;
+    margin-top: 10px;
 }
 #diporama{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: cal(500px * 3);
+    width: cal(500px * 28);
     height: 60vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-image: url("images/image25.jpg") cover;
-    background-repeat: no-repeat;
     border-radius: 5px;
-    /* animation: 9s linear 0s infinite alternate animating-multiple-properties; */
+    animation: 9s linear 0s infinite alternate slider;
 }
 img{
     position: relative;
@@ -77,14 +75,176 @@ img{
 #slide{
     float: left;
 }
-/* @keyframes animating-multiple-properties {
+@keyframes slider {
     0% {
-        background-image: url("images/image25.jpg");
+        transform: translateX(0);
     }
+    2% {
+        transform: translateX(0);
+    }
+    3% {
+        transform: translateX(-500px);
+    }
+    4% {
+        transform: translateX(-500px);
+    }
+    5% {
+        transform: translateX(-1000px);
+    }
+    6% {
+        transform: translateX(-1000px);
+    }
+    7% {
+        transform: translateX(-1500px);
+    }
+    8% {
+        transform: translateX(-1500px);
+    }
+    9% {
+        transform: translateX(-2000px);
+    }
+    10% {
+        transform: translateX(-2000px);
+    }
+    11% {
+        transform: translateX(-2500px);
+    }
+    12% {
+        transform: translateX(-2500px);
+    }
+    13% {
+        transform: translateX(-3000px);
+    }
+    14% {
+        transform: translateX(-3000px);
+    }
+    15% {
+        transform: translateX(-3500px);
+    }
+    16% {
+        transform: translateX(-3500px);
+    }
+    17% {
+        transform: translateX(-4000px);
+    }
+    18% {
+        transform: translateX(-4000px);
+    }
+    19% {
+        transform: translateX(-4500px);
+    }
+    20% {
+        transform: translateX(-4500px);
+    }
+    21% {
+        transform: translateX(-5000px);
+    }
+    22% {
+        transform: translateX(-5000px);
+    }
+    23% {
+        transform: translateX(-5500px);
+    }
+    24% {
+        transform: translateX(-5500px);
+    }
+    25% {
+        transform: translateX(-6000px);
+    }
+    26% {
+        transform: translateX(-6000px);
+    }
+    27% {
+        transform: translateX(-6500px);
+    }
+    28% {
+        transform: translateX(-6500px);
+    }
+    29% {
+        transform: translateX(-7000px);
+    }
+    /* 30% {
+        transform: translateX(-7000px);
+    }
+    31% {
+        transform: translateX(-7500px);
+    }
+    32% {
+        transform: translateX(-8000px);
+    }
+    33% {
+        transform: translateX(-8000px);
+    }
+    34% {
+        transform: translateX(-8500px);
+    } */
+    /* 35% {
+        transform: translateX(-8500px);
+    }
+    36% {
+        transform: translateX(-9000px);
+    }
+    37% {
+        transform: translateX(-9000px);
+    }
+    38% {
+        transform: translateX(-9500px);
+    }
+    39% {
+        transform: translateX(-9500px);
+    } */
+    /* 40% {
+        transform: translateX(-10000px);
+    }
+    41% {
+        transform: translateX(-10000px);
+    }
+    42% {
+        transform: translateX(-10500px);
+    }
+    43% {
+        transform: translateX(-10500px);
+    }
+    44% {
+        transform: translateX(-11000px);
+    }
+    45% {
+        transform: translateX(-11000px);
+    } */
+    /* 46% {
+        transform: translateX(-11500px);
+    }
+    47% {
+        transform: translateX(-11500px);
+    }
+    48% {
+        transform: translateX(-12000px);
+    } */
+    /* 49% {
+        transform: translateX(-12000px);
+    }
+    50% {
+        transform: translateX(-12500px);
+    } */
+    /* 51% {
+        transform: translateX(-12500px);
+    } */
+    /* 52% {
+        transform: translateX(-13000px);
+    }
+    53% {
+        transform: translateX(-13000px);
+    } */
+    /* 54% {
+        transform: translateX(-13500px);
+    }
+    55% {
+        transform: translateX(-13500px);
+    } */
     100% {
-      background-image: url("images/image1.jpg");
+        transform: translateX(0);
     }
-} */
+}
 footer{
     display: flex;
     height: 7vh;
